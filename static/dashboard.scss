@@ -1,3 +1,96 @@
 .dashboard {
-    margin: 20px;
+    .event {
+        margin: 20px 16px;
+        overflow: hidden;
+        cursor: pointer;
+
+        transition: all .3s;
+        -webkit-transition: all .3s;
+
+        .icon {
+            float: left;
+            margin-right: 10px;
+            font-size: 24px;
+            background-color: #2dbbe7;
+            color: #3c89b6;
+            width: 40px;
+            height: 40px;
+            line-height: 32px;
+            padding: 5px 0;
+            text-align: center;
+
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+
+        &.missed .icon, &.unread .icon {
+            background-color: #ff9393;
+        }
+
+        &.answered .icon {
+            background-color: #88ff70;
+        }
+
+        .status, .date {
+            font-size: 14px;
+            line-height: 1;
+        }
+
+        .status {
+            display: inline-block;
+        }
+
+        .date {
+            display: inline-block;
+            opacity: .5;
+        }
+
+        .contact {
+            a {
+                font-size: 14px;
+            }
+
+            .unknown {
+                opacity: .5;
+                font-size: 14px;
+            }
+        }
+
+        .wrap {
+            float: left;
+            margin-right: 10px;
+        }
+
+        .sms-text {
+            background-color: rgba(255, 255, 255, .2);
+            color: #fff;
+            font-size: 14px;
+            padding: 12px 16px;
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: top;
+
+            transition: all .3s;
+            -webkit-transition: all .3s;
+        }
+
+        &:hover {
+            background-color: rgba(255, 255, 255, .2);
+
+            .sms-text {
+                background-color: rgba(255, 255, 255, 0);
+            }
+        }
+    }
+
+    .brief {
+        margin-left: 20px;
+        width: 200px;
+        float: right;
+        font-size: 14px;
+        padding: 0 16px 0 20px;
+        border-left: 4px solid rgba(255, 255, 255, .2);
+        color: #fff;
+    }
 }

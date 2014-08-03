@@ -46,7 +46,7 @@
         <section class="phone-info">
             <div class="actions">
                 <a href="#" class="jolt-button btn" data-toggle="tooltip" data-placement="top" title="turn on elumination, vibration and sound notification on receiver's phone">Jolt</a>
-                <a href="#" class="call-button btn">Call</a>
+                <!-- <a href="#" class="call-button btn">Call</a> -->
             </div>
 
             <h2 class="title">
@@ -78,6 +78,49 @@
                 </li>
             </ul>
         </nav>
+
+        <div class="dashboard">
+            <aside class="brief">
+                <p>
+                    These are instant messages about most recent events. <br>
+                    <br>
+                    They will disappear after page reload. <br>
+                    <br>
+                    To see more - go to the corresponding tab: "Calls" or "SMS"
+                </p>
+            </aside>
+
+            <div class="event call missed" data-detail-url="/mobilecare/calls/">
+                <div class="icon glyphicon glyphicon-bell"></div>
+                <div class="status">missed call</div>
+                <div class="date">- moment ago</div>
+                <div class="contact">
+                    <span>+380 44 125 68 76</span>
+                    <span class="unknown">- unknown</span>
+                </div>
+            </div>
+            <div class="event call answered" data-detail-url="/mobilecare/calls/">
+                <div class="icon glyphicon glyphicon-bell"></div>
+                <div class="status">answered call</div>
+                <div class="date">- 2 hours ago</div>
+                <div class="contact">
+                    <span>+380 97 879 45 67</span> -
+                    <a href="#">Mr. Smith</a>
+                </div>
+            </div>
+            <div class="event sms unread" data-detail-url="/mobilecare/sms/">
+                <div class="icon glyphicon glyphicon-envelope"></div>
+                <div class="wrap">
+                    <div class="status">unread SMS</div>
+                    <div class="date">- 2014-08-01 @ 23:45</div>
+                    <div class="contact">
+                        <span>+380 44 125 68 76</span>
+                        <span class="unknown">- unknown</span>
+                    </div>
+                </div>
+                <div class="sms-text">This is your bank. Please, pay the bill in 4 days</div>
+            </div>
+        </div>
     </div>
 
     <footer class="footer">
@@ -89,6 +132,7 @@
 <script src="lib/bootstrap/js/bootstrap.js"></script>
 <script src="static/base.js"></script>
 <script src="static/phone-info.js"></script>
+<script src="static/dashboard.js"></script>
 
 </body>
 </html>
