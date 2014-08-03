@@ -1,0 +1,47 @@
+.phone-info {
+  margin: 20px 0;
+  padding: 12px 16px;
+  background-color: #2dbbe7; }
+  .phone-info > .title {
+    margin: 0;
+    font-size: 16px;
+    display: inline-block; }
+    .phone-info > .title strong {
+      font-size: 28px;
+      font-weight: 800;
+      text-transform: uppercase; }
+  .phone-info .model, .phone-info .battery, .phone-info .uptime {
+    font-size: 14px;
+    margin-left: 20px;
+    display: inline-block;
+    position: relative; }
+    .phone-info .model .label, .phone-info .battery .label, .phone-info .uptime .label {
+      font-size: 12px;
+      line-height: 1;
+      font-weight: normal;
+      color: rgba(255, 255, 255, 0.6);
+      padding: 0;
+      text-transform: lowercase;
+      position: absolute;
+      left: 0;
+      bottom: 100%;
+      margin-bottom: -2px; }
+    .phone-info .model .value, .phone-info .battery .value, .phone-info .uptime .value {
+      font-size: 1.4em; }
+  .phone-info .battery .time-left {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6); }
+  .phone-info .actions {
+    float: right; }
+    .phone-info .actions .btn {
+      margin-left: 4px;
+      border-color: transparent;
+      border-radius: 0;
+      color: #fff;
+      height: 31px;
+      line-height: 16px;
+      background-color: #e53b51;
+      transition: all .3s;
+      -webkit-transition: all .3s; }
+      .phone-info .actions .btn:hover {
+        background-color: #eb6879; }

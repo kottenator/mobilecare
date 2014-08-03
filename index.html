@@ -9,19 +9,46 @@
 
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,300'>
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-theme.css">
+    <!-- <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-theme.css"> -->
 
     <link rel="stylesheet" href="static/base.css">
+    <link rel="stylesheet" href="static/phone-info.css">
     <link rel="stylesheet" href="static/dashboard.css">
 </head>
 <body>
+
 <div class="page">
     <header class="header">
         <h1 class="logo">MobileCare</h1>
         <span class="slogan">Take care of your granny's phone, remotely</span>
+
+        <div class="dropdown user-menu">
+            <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                Maxim Prudkov
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">Profile</a>
+                </li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">Settings</a>
+                </li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">Logout</a>
+                </li>
+            </ul>
+        </div>
     </header>
+
     <div class="content">
         <section class="phone-info">
+            <div class="actions">
+                <a href="#" class="jolt-button btn" data-toggle="tooltip" data-placement="top" title="turn on elumination, vibration and sound notification on receiver's phone">Jolt</a>
+                <a href="#" class="call-button btn">Call</a>
+            </div>
+
             <h2 class="title">
                 <strong>Victoria Prudkova</strong>'s
                 phone
@@ -41,12 +68,16 @@
             </div>
         </section>
     </div>
+
     <footer class="footer">
         <span class="year">2014</span> - Assignment project for <a href="https://class.coursera.org/hciucsd-005">HCI course</a> on Coursera
     </footer>
 </div>
 
+<script src="lib/jquery/jquery-1.11.1.js"></script>
 <script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="static/base.js"></script>
+<script src="static/phone-info.js"></script>
 
 </body>
 </html>

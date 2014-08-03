@@ -1,0 +1,68 @@
+// Phone/account info
+.phone-info {
+    margin: 20px 0;
+    padding: 12px 16px;
+    background-color: #2dbbe7;
+
+    > .title {
+        margin: 0;
+        font-size: 16px;
+        display: inline-block;
+
+        strong {
+            font-size: 28px;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+    }
+
+    .model, .battery, .uptime {
+        font-size: 14px;
+        margin-left: 20px;
+        display: inline-block;
+        position: relative;
+
+        .label {
+            font-size: 12px;
+            line-height: 1;
+            font-weight: normal;
+            color: rgba(255, 255, 255, .6);
+            padding: 0;
+            text-transform: lowercase;
+            position: absolute;
+            left: 0;
+            bottom: 100%;
+            margin-bottom: -2px;
+        }
+
+        .value {
+            font-size: 1.4em;
+        }
+    }
+
+    .battery .time-left {
+        font-size: 16px;
+        color: rgba(255, 255, 255, .6);
+    }
+
+    .actions {
+        float: right;
+
+        .btn {
+            margin-left: 4px;
+            border-color: transparent;
+            border-radius: 0;
+            color: #fff;
+            height: 31px;
+            line-height: 16px;
+            background-color: #e53b51;
+
+            transition: all .3s;
+            -webkit-transition: all .3s;
+
+            &:hover {
+                background-color: lighten(#e53b51, 10);
+            }
+        }
+    }
+}
