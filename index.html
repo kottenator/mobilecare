@@ -6,19 +6,47 @@
     <title>Dashboard - MobileCare</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,300'>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-theme.css">
+
+    <link rel="stylesheet" href="static/base.css">
+    <link rel="stylesheet" href="static/dashboard.css">
 </head>
 <body>
 <div class="page">
     <header class="header">
-        <h1>MobileCare</h1>
+        <h1 class="logo">MobileCare</h1>
         <span class="slogan">Take care of your granny's phone, remotely</span>
     </header>
     <div class="content">
-        The Dashboard
+        <section class="phone-info">
+            <h2 class="title">
+                <strong>Victoria Prudkova</strong>'s
+                phone
+            </h2>
+            <div class="model">
+                <span class="label">Model</span>
+                <span class="value">Nokia X</span>
+            </div>
+            <div class="battery">
+                <span class="label">Battery</span>
+                <span class="value">39%</span>
+                <span class="time-left">(5 hours left)</span>
+            </div>
+            <div class="uptime">
+                <span class="label">Uptime</span>
+                <span class="value">85h 39m</span>
+            </div>
+        </section>
     </div>
     <footer class="footer">
         <span class="year">2014</span> - Assignment project for <a href="https://class.coursera.org/hciucsd-005">HCI course</a> on Coursera
     </footer>
 </div>
+
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+
 </body>
 </html>
