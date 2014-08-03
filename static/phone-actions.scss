@@ -1,0 +1,37 @@
+.phone-actions {
+    text-align: center;
+    margin-top: 2px;
+
+    ul {
+        display: inline-block;
+    }
+
+    li {
+        display: inline-block;
+
+        a, span {
+            line-height: 1;
+            display: block;
+            padding: 12px 16px;
+            margin: 0 1px;
+
+            transition: all .3s;
+            -webkit-transition: all .3s;
+        }
+
+        a {
+            background-color: #2dbbe7;
+            color: #fff;
+
+            &:hover {
+                background-color: lighten(#2dbbe7, 10);
+            }
+        }
+
+        span {
+            cursor: default;
+            background-color: #fcd920;
+            color: #ec6c20;
+        }
+    }
+}

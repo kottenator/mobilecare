@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Settings - MobileCare</title>
+    <title>SMS - MobileCare</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
 
     <link rel="stylesheet" href="../static/base.css">
+    <link rel="stylesheet" href="../static/phone-info.css">
+    <link rel="stylesheet" href="../static/phone-actions.css">
     <link rel="stylesheet" href="../static/blank-page.css">
 </head>
 <body>
@@ -41,12 +43,46 @@
     </header>
 
     <div class="content">
+        <section class="phone-info">
+            <div class="actions">
+                <a href="#" class="jolt-button btn" data-toggle="tooltip" data-placement="top" title="turn on elumination, vibration and sound notification on receiver's phone">Jolt</a>
+                <a href="#" class="call-button btn">Call</a>
+            </div>
+
+            <h2 class="title">
+                <strong>Victoria Prudkova</strong>'s
+                phone
+            </h2>
+            <div class="model">
+                <span class="label">Model</span>
+                <span class="value">Nokia X</span>
+            </div>
+            <div class="battery">
+                <span class="label">Battery</span>
+                <span class="value">39%</span>
+                <span class="time-left">(5 hours left)</span>
+            </div>
+            <div class="uptime">
+                <span class="label">Uptime</span>
+                <span class="value">85h 39m</span>
+            </div>
+        </section>
+
+        <nav class="phone-actions">
+            <ul>
+                <li>
+                    <a href="/mobilecare/">Dashboard</a>
+                </li><li>
+                    <a href="/mobilecare/calls/">Calls</a>
+                </li><li>
+                    <span>SMS</span>
+                </li>
+            </ul>
+        </nav>
+
         <section class="blank-page">
-            <h1 class="title">Profile settings page</h1>
             <p class="description">
-                Here will be user settings, like full name, avatar, email, change password
-                <br><br>
-                <a href="/mobilecare/">Back to home</a>
+                Here will be list of all the SMS
             </p>
         </section>
     </div>
