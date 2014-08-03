@@ -3,11 +3,11 @@
 
     cnt.find('.jolt-button').click(function(e) {
         e.preventDefault();
-        alert("Elumination turned-on on the Viktoria's phone. She should notice it and check what has she missed");
+        alert("Elumination turned-on on your mother's phone. She should notice it and check what has she missed");
     });
 
     cnt.find('.call-button').click(function(e) {
         e.preventDefault();
-        alert("Calling Viktoria...");
+        alert("Calling to your mother...");
     });
 })();

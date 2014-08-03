@@ -6,14 +6,23 @@
     margin: 0;
     padding: 0; }
   .phone-actions li {
-    display: inline-block; }
+    display: inline-block;
+    font-size: 14px; }
     .phone-actions li a, .phone-actions li span {
       line-height: 1;
       display: block;
-      padding: 12px 16px;
+      padding: 9px 12px;
       margin: 0 1px;
       transition: all .3s;
       -webkit-transition: all .3s; }
+      .phone-actions li a .counter, .phone-actions li span .counter {
+        font-size: 10px;
+        display: inline-block;
+        padding: 3px 5px;
+        border-radius: 10px;
+        margin: -3px -3px -3px 2px;
+        background-color: #fff;
+        color: #2dbbe7; }
     .phone-actions li a {
       background-color: #2dbbe7;
       color: #fff; }
@@ -23,3 +32,5 @@
       cursor: default;
       background-color: #fcd920;
       color: #ec6c20; }
+      .phone-actions li span .counter {
+        color: #ec6c20; }
