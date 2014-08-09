@@ -43,3 +43,7 @@ a {
     bottom: 0;
     right: 0;
     padding: 6px 12px; }
+
+[id^=noty][id$=_layout_container] > li {
+  border-radius: 0 !important;
+  border-color: rgba(0, 0, 0, 0.1) !important; }
