@@ -27,6 +27,9 @@
     .dashboard .event.slow-transition {
       -webkit-transition-duration: 1.5s;
               transition-duration: 1.5s; }
+    .dashboard .event.no-transition {
+      -webkit-transition: none;
+              transition: none; }
     .dashboard .event .icon {
       float: left;
       margin-right: 40px;
@@ -94,6 +97,8 @@
          box-sizing: border-box; }
     .dashboard .calls-overview > .title, .dashboard .sms-overview > .title {
       font-weight: 300; }
+    .dashboard .calls-overview .empty-message, .dashboard .sms-overview .empty-message {
+      margin-bottom: 16px; }
     .dashboard .calls-overview .recent-events, .dashboard .sms-overview .recent-events {
       padding-left: 20px;
       margin-bottom: 20px; }
@@ -121,7 +126,6 @@
     .dashboard .calls-overview > .more, .dashboard .sms-overview > .more {
       display: inline-block;
       padding: 6px 12px;
-      text-transform: lowercase;
       background-color: #2dbbe7;
       color: #fff;
       -webkit-transition: all .3s;
