@@ -79,40 +79,53 @@
             </ul>
         </nav>
 
-        <section class="calls">
-            <div class="dashboard">
-                <div class="event call missed" data-detail-url="/mobilecare/calls/">
-                    <div class="icon glyphicon glyphicon-bell"></div>
-                    <div class="status">missed call</div>
-                    <div class="date" data-toggle="tooltip" title="2014-08-03 @ 17:41">- moment ago</div>
-                    <div class="contact">
-                        <span>+380 44 125 68 76</span>
-                        <span class="unknown">- unknown</span>
-                    </div>
+        <section class="dashboard">
+            <div class="event call missed highlighted">
+                <div class="icon">
+                    <i class="glyphicon glyphicon-bell"></i>
+                    <i class="arrow glyphicon glyphicon-arrow-left"></i>
                 </div>
-
-                <div class="event call answered" data-detail-url="/mobilecare/calls/">
-                    <div class="icon glyphicon glyphicon-bell"></div>
-                    <div class="status">answered call</div>
-                    <div class="date" data-toggle="tooltip" title="2014-08-03 @ 10:23">- 2 hours ago</div>
-                    <div class="contact">
-                        <span>+380 97 879 45 67</span> -
-                        <a href="#">Mr. Smith</a>
-                    </div>
+                <div class="top-line">
+                    <span class="status">missed call</span>
+                    <span class="date" data-toggle="tooltip" title="2014-08-03 @ 17:41">- moment ago</span>
                 </div>
-
-                <div class="event call dialed" data-detail-url="/mobilecare/calls/">
-                    <div class="icon glyphicon glyphicon-bell"></div>
-                    <div class="status">dialed call</div>
-                    <div class="date" data-toggle="tooltip" title="2014-08-03 @ 7:23">- 5 hours ago</div>
-                    <div class="contact">
-                        <span>+380 97 879 45 67</span> -
-                        <a href="#">Mr. Smith</a>
-                    </div>
+                <div class="contact">
+                    <span>+380 44 125 68 76</span>
+                    <span class="unknown">- unknown</span>
                 </div>
             </div>
-        </section>
-    </div>
+
+            <div class="event call answered highlighted">
+                <div class="icon">
+                    <i class="glyphicon glyphicon-bell"></i>
+                    <i class="arrow glyphicon glyphicon-arrow-left"></i>
+                </div>
+                <div class="top-line">
+                    <span class="status">answered call</span>
+                    <span class="date" data-toggle="tooltip" title="2014-08-03 @ 10:23">- 2 hours ago</span>
+                </div>
+                <div class="contact">
+                    <span>+380 97 879 45 67</span> -
+                    <a href="#">Mr. Smith</a>
+                </div>
+            </div>
+
+            <div class="event call dialed">
+                <div class="icon">
+                    <i class="glyphicon glyphicon-bell"></i>
+                    <i class="arrow glyphicon glyphicon-arrow-right"></i>
+                </div>
+                <div class="top-line">
+                    <span class="status">dialed call</span>
+                    <span class="date" data-toggle="tooltip" title="2014-08-03 @ 7:23">- 5 hours ago</span>
+                </div>
+                <div class="contact">
+                    <span>+380 97 879 45 67</span> -
+                    <a href="#">Mr. Smith</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
         <span class="year">2014</span> - Assignment project for <a href="https://class.coursera.org/hciucsd-005">HCI course</a> on Coursera
@@ -124,6 +137,7 @@
 <script src="../lib/noty/js/noty/packaged/jquery.noty.packaged.js"></script>
 <script src="../static/base/base.js"></script>
 <script src="../static/phone-info/phone-info.js"></script>
+<script src="../static/phone-actions/phone-actions.js"></script>
 <script src="../static/dashboard/dashboard.js"></script>
 
 </body>

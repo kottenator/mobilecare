@@ -1,15 +1,27 @@
 .dashboard {
-  margin-top: 10px; }
+  margin-top: 20px; }
   .dashboard .event {
     margin: 10px;
     padding: 4px;
     overflow: hidden;
-    cursor: pointer;
-    transition: all .3s;
-    -webkit-transition: all .3s; }
+    -webkit-transition: all .3s;
+            transition: all .3s; }
+    .dashboard .event.highlighted, .dashboard .event.highlighted:hover {
+      background-color: #fdff72;
+      color: #c50; }
+      .dashboard .event.highlighted .sms-text, .dashboard .event.highlighted:hover .sms-text {
+        background-color: rgba(255, 255, 255, 0.4);
+        color: #c50; }
+      .dashboard .event.highlighted .icon .arrow, .dashboard .event.highlighted:hover .icon .arrow {
+        color: #c50; }
+      .dashboard .event.highlighted .contact a, .dashboard .event.highlighted:hover .contact a {
+        color: #c50; }
+    .dashboard .event.slow-transition {
+      -webkit-transition-duration: 1.5s;
+              transition-duration: 1.5s; }
     .dashboard .event .icon {
       float: left;
-      margin-right: 10px;
+      margin-right: 40px;
       font-size: 24px;
       background-color: #2dbbe7;
       color: #3c89b6;
@@ -18,20 +30,30 @@
       line-height: 32px;
       padding: 5px 0;
       text-align: center;
-      box-sizing: border-box;
+      position: relative;
       -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box; }
+           box-sizing: border-box; }
+      .dashboard .event .icon .arrow {
+        font-size: 20px;
+        color: #fff;
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        width: 20px;
+        height: 20px;
+        margin-top: -10px;
+        margin-left: 10px; }
     .dashboard .event.missed .icon, .dashboard .event.unread .icon {
       background-color: #ff9393; }
-    .dashboard .event.answered .icon {
+    .dashboard .event.answered .icon, .dashboard .event.read .icon {
       background-color: #88ff70; }
     .dashboard .event .status, .dashboard .event .date {
       font-size: 14px;
-      line-height: 1; }
-    .dashboard .event .status {
-      display: inline-block; }
+      line-height: 12px; }
+    .dashboard .event .top-line {
+      line-height: 1;
+      margin-bottom: 2px; }
     .dashboard .event .date {
-      display: inline-block;
       opacity: .5; }
     .dashboard .event .contact a {
       font-size: 14px; }
@@ -40,17 +62,17 @@
       font-size: 14px; }
     .dashboard .event .wrap {
       float: left;
-      margin-right: 10px; }
+      width: 240px; }
     .dashboard .event .sms-text {
       background-color: rgba(255, 255, 255, 0.2);
       color: #fff;
       font-size: 14px;
-      padding: 12px 16px;
+      padding: 11px 16px;
       overflow: hidden;
       display: inline-block;
       vertical-align: top;
-      transition: all .3s;
-      -webkit-transition: all .3s; }
+      -webkit-transition: all .3s;
+              transition: all .3s; }
     .dashboard .event:hover {
       background-color: rgba(255, 255, 255, 0.2); }
       .dashboard .event:hover .sms-text {

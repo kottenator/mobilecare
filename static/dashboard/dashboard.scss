@@ -1,18 +1,37 @@
 .dashboard {
-    margin-top: 10px;
+    margin-top: 20px;
 
     .event {
         margin: 10px;
         padding: 4px;
         overflow: hidden;
-        cursor: pointer;
-
         transition: all .3s;
-        -webkit-transition: all .3s;
+
+        &.highlighted, &.highlighted:hover {
+            background-color: #fdff72;
+            color: #c50;
+
+            .sms-text {
+                background-color: rgba(255, 255, 255, .4);
+                color: #c50;
+            }
+
+            .icon .arrow {
+                color: #c50;
+            }
+
+            .contact a {
+                color: #c50;
+            }
+        }
+
+        &.slow-transition {
+            transition-duration: 1.5s;
+        }
 
         .icon {
             float: left;
-            margin-right: 10px;
+            margin-right: 40px;
             font-size: 24px;
             background-color: #2dbbe7;
             color: #3c89b6;
@@ -21,31 +40,43 @@
             line-height: 32px;
             padding: 5px 0;
             text-align: center;
-
+            position: relative;
             box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            -webkit-box-sizing: border-box;
+
+            .arrow {
+                font-size: 20px;
+                color: #fff;
+                position: absolute;
+                left: 100%;
+                top: 50%;
+                width: 20px;
+                height: 20px;
+                margin-top: -10px;
+                margin-left: 10px;
+            }
         }
 
         &.missed .icon, &.unread .icon {
             background-color: #ff9393;
         }
 
-        &.answered .icon {
+        &.answered .icon, &.read .icon {
             background-color: #88ff70;
         }
 
         .status, .date {
             font-size: 14px;
-            line-height: 1;
+            line-height: 12px;
         }
 
-        .status {
-            display: inline-block;
+        .top-line {
+            line-height: 1;
+            margin-bottom: 2px;
         }
+
+        .status {}
 
         .date {
-            display: inline-block;
             opacity: .5;
         }
 
@@ -62,20 +93,18 @@
 
         .wrap {
             float: left;
-            margin-right: 10px;
+            width: 240px;
         }
 
         .sms-text {
             background-color: rgba(255, 255, 255, .2);
             color: #fff;
             font-size: 14px;
-            padding: 12px 16px;
+            padding: 11px 16px;
             overflow: hidden;
             display: inline-block;
             vertical-align: top;
-
             transition: all .3s;
-            -webkit-transition: all .3s;
         }
 
         &:hover {

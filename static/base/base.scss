@@ -10,9 +10,7 @@ body {
 a {
     text-decoration: none;
     color: #febc1f;
-
     transition: color .3s;
-    -webkit-transition: color .3s;
 
     &:hover {
         color: lighten(#febc1f, 10);

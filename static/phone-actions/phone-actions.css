@@ -22,7 +22,14 @@
         border-radius: 10px;
         margin: -3px -3px -3px 2px;
         background-color: #fff;
-        color: #2dbbe7; }
+        color: #2dbbe7;
+        -webkit-transition: all .3s;
+                transition: all .3s; }
+        .phone-actions li a .counter.collapsed, .phone-actions li span .counter.collapsed {
+          width: 0;
+          padding: 0;
+          margin: 0 0 0 -3px;
+          opacity: 0; }
     .phone-actions li a {
       background-color: #2dbbe7;
       color: #fff; }

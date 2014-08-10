@@ -29,6 +29,15 @@
                 margin: -3px -3px -3px 2px;
                 background-color: #fff;
                 color: #2dbbe7;
+
+                transition: all .3s;
+
+                &.collapsed {
+                    width: 0;
+                    padding: 0;
+                    margin: 0 0 0 -3px;
+                    opacity: 0;
+                }
             }
         }
 
