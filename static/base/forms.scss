@@ -1,0 +1,38 @@
+form {
+    label {
+        font-weight: normal;
+    }
+
+    input[type="button"],
+    input[type="submit"] {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 10px 12px;
+        border: none;
+        margin-top: 20px;
+        background-color: #2dbbe7;
+        color: #fff;
+        transition: all .3s;
+        box-sizing: border-box;
+        line-height: 18px;
+        height: 40px;
+
+        &:hover {
+            background-color: lighten(#2dbbe7, 10);
+        }
+    }
+
+    input[type="submit"] {
+        background-color: #e53b51;
+
+        &:hover {
+            background-color: lighten(#e53b51, 10);
+        }
+    }
+
+    .help-text {
+        opacity: .6;
+        font-size: 12px;
+        margin-top: -6px;
+    }
+}

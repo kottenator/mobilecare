@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
 
     <link rel="stylesheet" href="../static/base/base.css">
-    <link rel="stylesheet" href="../static/blank-page/blank-page.css">
+    <link rel="stylesheet" href="../static/base/forms.css">
+    <link rel="stylesheet" href="../static/remote/remote.css">
 </head>
 <body>
 
@@ -27,10 +28,10 @@
             </a>
             <ul class="dropdown-menu" role="menu">
                 <li>
-                    <a tabindex="-1" href="/mobilecare/remote/">Remote phone</a>
+                    <a tabindex="-1" href="/mobilecare/settings/">Profile settings</a>
                 </li>
                 <li>
-                    <a tabindex="-1" href="/mobilecare/settings/">Profile settings</a>
+                    <a tabindex="-1" href="/mobilecare/remote/">Remote phone</a>
                 </li>
                 <li class="divider"></li>
                 <li>
@@ -41,14 +42,47 @@
     </header>
 
     <div class="content">
-        <section class="blank-page">
-            <h1 class="title">Remote phone page</h1>
-            <p class="description">
-                Here will be Remote phone settings. For now I give ability to link only one remote phone
-                <br><br>
-                <a href="/mobilecare/">Back to home</a>
-            </p>
-        </section>
+        <div class="remote-phone">
+            <h1 class="title">Remote phone</h1>
+
+            <form action="." method="post">
+                <p>
+                    <label>IMEI:</label>
+                    <span>90125474864086542</span>
+                </p>
+                <p>
+                    <label for="id-phone-name">Name of device:</label>
+                    <input type="text" name="phone-name" id="id-phone-name" value="My mother's phone" class="form-control">
+                </p>
+                <p>
+                    <label for="id-phone-number">Phone number:</label>
+                    <input type="text" name="phone-number" id="id-phone-number" value="+380 97 324 54 67" class="form-control">
+                </p>
+                <p>
+                    <label for="id-home-phone-number">Home phone number:</label>
+                    <input type="text" name="home-phone-number" id="id-home-phone-number" value="+380 44 654 76 34" class="form-control">
+                </p>
+                <p>
+                    <input type="submit" value="Save changes">
+                    <input type="button" class="unlink" value="Unlink the phone">
+                </p>
+            </form>
+
+            <div class="tutorial">
+                <strong class="title">How to connect a phone?</strong>
+                <ol>
+                    <li>
+                        Install the app: <br>
+                        <a href="#"><img src="/mobilecare/static/remote/appstore-logo.png" alt="AppStore App" width="172" height="60"></a>
+                        <a href="#"><img src="/mobilecare/static/remote/android-market-logo.png" alt="Android App" width="172" height="60"></a>
+                    </li>
+                    <li>
+                        Run the app and login to MobileCare in the app
+                    </li>
+                    <li>Connect the phone to your profile</li>
+                </ol>
+            </div>
+        </div>
     </div>
 
     <footer class="footer">
@@ -60,6 +94,8 @@
 <script src="../lib/bootstrap/js/bootstrap.js"></script>
 <script src="../lib/noty/js/noty/packaged/jquery.noty.packaged.js"></script>
 <script src="../static/base/base.js"></script>
+<script src="../static/base/forms.js"></script>
+<script src="../static/remote/remote.js"></script>
 
 </body>
 </html>

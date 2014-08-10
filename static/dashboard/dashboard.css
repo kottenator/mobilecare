@@ -123,12 +123,12 @@
         border-color: #febc1f; }
       .dashboard .calls-overview .recent-events .recent-event .date, .dashboard .sms-overview .recent-events .recent-event .date {
         opacity: .5; }
-    .dashboard .calls-overview > .more, .dashboard .sms-overview > .more {
+    .dashboard .calls-overview > .dmore, .dashboard .sms-overview > .dmore {
       display: inline-block;
       padding: 6px 12px;
       background-color: #2dbbe7;
       color: #fff;
       -webkit-transition: all .3s;
               transition: all .3s; }
-      .dashboard .calls-overview > .more:hover, .dashboard .sms-overview > .more:hover {
+      .dashboard .calls-overview > .dmore:hover, .dashboard .sms-overview > .dmore:hover {
         background-color: #5bcaec; }

@@ -1,0 +1,28 @@
+form label {
+  font-weight: normal; }
+form input[type="button"],
+form input[type="submit"] {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px 12px;
+  border: none;
+  margin-top: 20px;
+  background-color: #2dbbe7;
+  color: #fff;
+  -webkit-transition: all .3s;
+          transition: all .3s;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  line-height: 18px;
+  height: 40px; }
+  form input[type="button"]:hover,
+  form input[type="submit"]:hover {
+    background-color: #5bcaec; }
+form input[type="submit"] {
+  background-color: #e53b51; }
+  form input[type="submit"]:hover {
+    background-color: #eb6879; }
+form .help-text {
+  opacity: .6;
+  font-size: 12px;
+  margin-top: -6px; }

@@ -1,0 +1,34 @@
+.profile-settings:after {
+  content: "";
+  display: table;
+  width: 100%;
+  height: 0;
+  font-size: 1px;
+  clear: both; }
+.profile-settings form {
+  width: 400px;
+  float: left; }
+.profile-settings > .title {
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 20px; }
+.profile-settings .social-networks {
+  float: left;
+  margin-left: 50px; }
+  .profile-settings .social-networks > .title {
+    margin-bottom: 6px; }
+  .profile-settings .social-networks ul {
+    list-style: none;
+    padding: 0; }
+  .profile-settings .social-networks li {
+    margin-bottom: 10px; }
+    .profile-settings .social-networks li a {
+      display: inline-block;
+      padding: 6px 8px;
+      background-color: #2dbbe7;
+      color: #fff;
+      -webkit-transition: all .3s;
+              transition: all .3s; }
+      .profile-settings .social-networks li a:hover {
+        background-color: #5bcaec; }

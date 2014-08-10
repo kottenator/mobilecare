@@ -1,0 +1,60 @@
+.remote-phone {
+    &:after {
+        content: "";
+        display: table;
+        width: 100%;
+        height: 0;
+        font-size: 1px;
+        clear: both;
+    }
+
+    > .title {
+        font-size: 28px;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    form {
+        float: left;
+        width: 400px;
+
+        .unlink {
+            background-color: #fff;
+            color: #f00;
+            margin-left: 4px;
+            border: 2px solid #f00;
+            line-height: 16px;
+
+            &:hover {
+                background-color: #f00;
+                color: #fff;
+            }
+        }
+
+        .value {
+            margin: 0;
+            font-size: 24px;
+            line-height: 24px;
+        }
+    }
+
+    .tutorial {
+        float: left;
+        margin-left: 50px;
+        width: 400px;
+
+        > .title {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        img {
+            margin-top: 4px;
+        }
+    }
+}

@@ -41,7 +41,7 @@
       height: 31px;
       line-height: 16px;
       background-color: #e53b51;
-      transition: all .3s;
-      -webkit-transition: all .3s; }
+      -webkit-transition: all .3s;
+              transition: all .3s; }
       .phone-info .actions .btn:hover {
         background-color: #eb6879; }

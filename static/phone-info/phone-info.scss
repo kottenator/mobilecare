@@ -56,9 +56,7 @@
             height: 31px;
             line-height: 16px;
             background-color: #e53b51;
-
             transition: all .3s;
-            -webkit-transition: all .3s;
 
             &:hover {
                 background-color: lighten(#e53b51, 10);

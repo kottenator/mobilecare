@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
 
     <link rel="stylesheet" href="../static/base/base.css">
-    <link rel="stylesheet" href="../static/blank-page/blank-page.css">
+    <link rel="stylesheet" href="../static/base/forms.css">
+    <link rel="stylesheet" href="../static/settings/settings.css">
 </head>
 <body>
 
@@ -27,10 +28,10 @@
             </a>
             <ul class="dropdown-menu" role="menu">
                 <li>
-                    <a tabindex="-1" href="/mobilecare/remote/">Remote phone</a>
+                    <a tabindex="-1" href="/mobilecare/settings/">Profile settings</a>
                 </li>
                 <li>
-                    <a tabindex="-1" href="/mobilecare/settings/">Profile settings</a>
+                    <a tabindex="-1" href="/mobilecare/remote/">Remote phone</a>
                 </li>
                 <li class="divider"></li>
                 <li>
@@ -41,14 +42,48 @@
     </header>
 
     <div class="content">
-        <section class="blank-page">
-            <h1 class="title">Profile settings page</h1>
-            <p class="description">
-                Here will be user settings, like full name, avatar, email, change password
-                <br><br>
-                <a href="/mobilecare/">Back to home</a>
-            </p>
-        </section>
+        <div class="profile-settings">
+            <h1 class="title">Profile settings</h1>
+
+            <form action="." method="post">
+                <p>
+                    <label for="id-full-name">Full name:</label>
+                    <input type="text" name="full-name" id="id-full-name" value="Maxim Prudkov" class="form-control">
+                </p>
+                <p>
+                    <label for="id-email">E-mail:</label>
+                    <input type="email" name="email" id="id-email" value="maxim.prudkov@gmail.com" class="form-control">
+                    <div class="help-text">you will need to confirm new E-mail before change will take effect</div>
+                </p>
+                <p>
+                    <label for="id-new-password">New password:</label>
+                    <input type="password" name="new-password" id="id-new-password" class="form-control">
+                </p>
+                <p>
+                    <label for="id-repeat-new-password">Repeat new password:</label>
+                    <input type="password" name="repeat-new-password" id="id-repeat-new-password" class="form-control">
+                </p>
+                <p>
+                    <input type="submit" value="Save changes">
+                </p>
+            </form>
+
+            <div class="social-networks">
+                <div class="title">
+                    Social authorization:
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">Disconnect</a>
+                        Facebook
+                    </li>
+                    <li>
+                        <a href="#">Connect</a>
+                        Twitter
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <footer class="footer">
@@ -60,6 +95,8 @@
 <script src="../lib/bootstrap/js/bootstrap.js"></script>
 <script src="../lib/noty/js/noty/packaged/jquery.noty.packaged.js"></script>
 <script src="../static/base/base.js"></script>
+<script src="../static/base/forms.js"></script>
+<script src="../static/settings/settings.js"></script>
 
 </body>
 </html>
