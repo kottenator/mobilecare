@@ -1,0 +1,51 @@
+.contact-person {
+    color: #444;
+
+    .avatar {
+        display: inline-block;
+        vertical-align: top;
+        float: right;
+        border: 2px solid #aaa;
+        border-radius: 4px;
+        font-size: 80px;
+        text-align: center;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .modal-title {
+        padding: 22px 20px 16px;
+        font-size: 24px;
+    }
+
+    .modal-body {
+        padding: 0 0 16px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0 0 0 20px;
+
+        li {
+            margin-bottom: 6px;
+        }
+    }
+
+    .status {
+        background-color: #2dbbe7;
+        color: #fff;
+        padding: 0 3px;
+
+        &.success {
+            background-color: #88ff70;
+        }
+
+        &.error {
+            background-color: #ff9393;
+        }
+    }
+
+    .date {
+        opacity: .6;
+    }
+}

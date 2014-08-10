@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
 
     <link rel="stylesheet" href="../static/base/base.css">
+    <link rel="stylesheet" href="../static/base/contact-person.css">
     <link rel="stylesheet" href="../static/phone-info/phone-info.css">
     <link rel="stylesheet" href="../static/phone-actions/phone-actions.css">
     <link rel="stylesheet" href="../static/dashboard/dashboard.css">
@@ -110,7 +111,7 @@
                     </div>
                     <div class="contact">
                         <span>+380 97 879 45 67</span> -
-                        <a href="#">Mr. Smith</a>
+                        <a class="person" href="#">Mr. Smith</a>
                     </div>
                 </div>
                 <div class="sms-text">I was so glad to meet you today. Let's go to the theater next week</div>
@@ -128,7 +129,7 @@
                     </div>
                     <div class="contact">
                         <span>+380 97 879 45 67</span> -
-                        <a href="#">Mr. Smith</a>
+                        <a class="person" href="#">Mr. Smith</a>
                     </div>
                 </div>
                 <div class="sms-text">Agree, let's meet today at 16:00 near the restaurant</div>
@@ -146,7 +147,7 @@
                     </div>
                     <div class="contact">
                         <span>+380 97 879 45 67</span> -
-                        <a href="#">Mr. Smith</a>
+                        <a class="person" href="#">Mr. Smith</a>
                     </div>
                 </div>
                 <div class="sms-text">Hello, my dear Maria. Don't you want to go to the restaurant today?</div>
@@ -159,11 +160,50 @@
     </footer>
 </div>
 
+<script type="text/x-template" id="contact-person-template">
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content contact-person">
+                <div class="avatar glyphicon glyphicon-user"></div>
+                <div class="modal-title">
+                    <strong class="title">Mr. Smith</strong>
+                    <span class="phone">+380 97 879 45 67</span>
+                </div>
+                <div class="modal-body">
+                    <ul class="events-history">
+                        <li>
+                            <span class="status success">answered call</span>
+                            <span class="date">- 2014-08-03 @ 10:23</span>
+                        </li>
+                        <li>
+                            <span class="status">dialed call</span>
+                            <span class="date">- 2014-08-03 @ 7:23</span>
+                        </li>
+                        <li>
+                            <span class="status success">read SMS</span>
+                            <span class="date">- 2014-08-01 @ 18:22</span>
+                        </li>
+                        <li>
+                            <span class="status">sent SMS</span>
+                            <span class="date">- 2014-08-01 @ 12:16</span>
+                        </li>
+                        <li>
+                            <span class="status success">read SMS</span>
+                            <span class="date">- 2014-08-01 @ 12:10</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
 <script src="../lib/jquery/jquery-1.11.1.js"></script>
 <script src="../lib/bootstrap/js/bootstrap.js"></script>
 <script src="../lib/noty/js/noty/packaged/jquery.noty.packaged.js"></script>
 <script src="../lib/localstorage/localstorage.js"></script>
 <script src="../static/base/base.js"></script>
+<script src="../static/base/contact-person.js"></script>
 <script src="../static/phone-info/phone-info.js"></script>
 <script src="../static/phone-actions/phone-actions.js"></script>
 <script src="../static/dashboard/dashboard.js"></script>

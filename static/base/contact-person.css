@@ -1,0 +1,32 @@
+.contact-person {
+  color: #444; }
+  .contact-person .avatar {
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    font-size: 80px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px; }
+  .contact-person .modal-title {
+    padding: 22px 20px 16px;
+    font-size: 24px; }
+  .contact-person .modal-body {
+    padding: 0 0 16px; }
+  .contact-person ul {
+    list-style: none;
+    padding: 0 0 0 20px; }
+    .contact-person ul li {
+      margin-bottom: 6px; }
+  .contact-person .status {
+    background-color: #2dbbe7;
+    color: #fff;
+    padding: 0 3px; }
+    .contact-person .status.success {
+      background-color: #88ff70; }
+    .contact-person .status.error {
+      background-color: #ff9393; }
+  .contact-person .date {
+    opacity: .6; }

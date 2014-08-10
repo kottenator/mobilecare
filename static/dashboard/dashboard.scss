@@ -144,12 +144,12 @@
         }
 
         .empty-message {
-            margin-bottom: 16px;
+            margin-bottom: 10px;
         }
 
         .recent-events {
             padding-left: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
 
             > .title {
                 margin-left: -20px;
@@ -189,18 +189,6 @@
                 .date {
                     opacity: .5;
                 }
-            }
-        }
-
-        > .dmore {
-            display: inline-block;
-            padding: 6px 12px;
-            background-color: #2dbbe7;
-            color: #fff;
-            transition: all .3s;
-
-            &:hover {
-                background-color: lighten(#2dbbe7, 10);
             }
         }
     }
