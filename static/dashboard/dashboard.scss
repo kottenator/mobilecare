@@ -192,4 +192,20 @@
             }
         }
     }
+
+    .warning-message,
+    .error-message {
+        padding: 16px 20px;
+        margin-bottom: 30px;
+    }
+
+    .warning-message {
+        color: #ec6c20;
+        background-color: #fcd920;
+    }
+
+    .error-message {
+        color: #fff;
+        background-color: #e53b51;
+    }
 }

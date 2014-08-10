@@ -82,6 +82,18 @@
         </nav>
 
         <div class="dashboard">
+            <p class="low-battery-message warning-message hidden">
+                The battery is almost discharged (5 minutes left). <br>
+                Please, call the "My mother's phone" <strong>+380 97 324 54 67</strong>, or jolt it,
+                or call the home phone <strong>+380 44 654 76 34</strong>
+                and ask to charge it!
+            </p>
+
+            <p class="offline-message error-message hidden">
+                The phone is offline for 12 hours. This looks not good. <br>
+                Please, call the home phone <strong>+380 44 654 76 34</strong> or call the <strong>911</strong>
+            </p>
+
             <section class="calls-overview">
                 <h2 class="title">Calls</h2>
 
@@ -140,8 +152,11 @@
 
 <div class="wizard-of-oz">
     <strong class="title">Wizard of Oz</strong>
-    <a href="#" class="see-all">mark all seen</a>
-    <a href="#" class="unsee-all">mark all unseen</a>
+    <a href="#" class="view-all">view calls/SMS</a>
+    <a href="#" class="unview-all">un-view calls/SMS</a>
+    <a href="#" class="low-battery">low battery</a>
+    <a href="#" class="offline">offline</a>
+    <a href="#" class="reset hidden">reset</a>
 </div>
 
 <script type="text/x-template" id="contact-person-template">

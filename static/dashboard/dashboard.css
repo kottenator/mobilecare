@@ -123,3 +123,13 @@
         border-color: #febc1f; }
       .dashboard .calls-overview .recent-events .recent-event .date, .dashboard .sms-overview .recent-events .recent-event .date {
         opacity: .5; }
+  .dashboard .warning-message,
+  .dashboard .error-message {
+    padding: 16px 20px;
+    margin-bottom: 30px; }
+  .dashboard .warning-message {
+    color: #ec6c20;
+    background-color: #fcd920; }
+  .dashboard .error-message {
+    color: #fff;
+    background-color: #e53b51; }
