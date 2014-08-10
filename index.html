@@ -81,13 +81,52 @@
 
         <div class="dashboard">
             <section class="calls-overview">
-                <h2 class="title">Calls:</h2>
-                [TODO]
+                <h2 class="title">Calls</h2>
+
+                <p class="empty-message hidden">There is nothing you haven't seen</p>
+
+                <ul class="recent-events">
+                    <li class="title">
+                        You haven't seen yet:
+                    </li>
+                    <li class="recent-event">
+                        <span class="state error">missed call</span>
+                        <span class="contact">
+                            from <span class="highlight" data-toggle="tooltip" title="+380 44 125 68 76">unknown</span>,
+                        </span>
+                        <span class="date" data-toggle="tooltip" title="2014-08-03 @ 17:41">moment ago</span>
+                    </li>
+                    <li class="recent-event">
+                        <span class="state success">answered call</span>
+                        <span class="contact">
+                            from <a href="#" class="highlight person" data-toggle="tooltip" title="+380 97 879 45 67">Mr. Smith</a>,
+                        </span>
+                        <span class="date" data-toggle="tooltip" title="2014-08-03 @ 10:23">2 hours ago</span>
+                    </li>
+                </ul>
+
+                <a href="/mobilecare/calls/" class="more">See all the calls</a>
             </section>
 
             <section class="sms-overview">
-                <h2 class="title">SMS:</h2>
-                [TODO]
+                <h2 class="title">SMS</h2>
+
+                <p class="empty-message hidden">There is nothing you haven't seen</p>
+
+                <ul class="recent-events">
+                    <li class="title">
+                        You haven't seen yet:
+                    </li>
+                    <li class="recent-event">
+                        <span class="state error">unread SMS</span>
+                        <span class="contact">
+                            from <span class="highlight" data-toggle="tooltip" title="+380 44 125 68 76">unknown</span>,
+                        </span>
+                        <span class="date">2014-08-01 @ 23:45</span>
+                    </li>
+                </ul>
+
+                <a href="/mobilecare/sms/" class="more">See all the SMS</a>
             </section>
 
             <!-- <aside class="brief">
