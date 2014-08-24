@@ -28,15 +28,15 @@ $(function() {
             filtered = filtered.filter(':not(.sms)');
 
         searchInput.val(v);
-        var q = v.toLowerCase().replace(/^\s+|\s+$/g, '');
+        var q = v.toLowerCase().replace(/\s/g, '');
         filtered = filtered.filter(function() {
-            return $(this).text().toLowerCase().indexOf(q) != -1;
+            return $(this).find('.contact >').text().toLowerCase().replace(/\s/g, '').indexOf(q) != -1;
         });
         _drawTable(filtered);
     }
 
     function _drawTable(events) {
-        events.detach();
+        table.find('.event').detach();
         table.empty();
         var tr;
         for (var i = 0; i < events.length; i++) {
