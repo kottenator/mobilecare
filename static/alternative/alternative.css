@@ -6,18 +6,6 @@
   font-size: 1px;
   clear: both;
   visibility: hidden; }
-.dashboard.alt .events-table {
-  width: 100%;
-  border-spacing: 10px;
-  border-collapse: separate; }
-  .dashboard.alt .events-table td {
-    width: 33%;
-    padding: 10px;
-    vertical-align: top;
-    background-color: rgba(255, 255, 255, 0.1);
-    transition: all 0.3s; }
-    .dashboard.alt .events-table td:hover {
-      background-color: rgba(255, 255, 255, 0.2); }
 .dashboard.alt .event {
   margin: 0; }
   .dashboard.alt .event .icon {
@@ -40,3 +28,39 @@
     background-color: transparent; }
     .dashboard.alt .event:hover .sms-text {
       background-color: rgba(255, 255, 255, 0.3); }
+.dashboard.alt .events-table {
+  width: 100%;
+  border-spacing: 10px;
+  border-collapse: separate; }
+  .dashboard.alt .events-table td {
+    width: 33%;
+    padding: 10px;
+    vertical-align: top;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s; }
+    .dashboard.alt .events-table td:hover {
+      background-color: rgba(255, 255, 255, 0.2); }
+.dashboard.alt .actions {
+  overflow: hidden;
+  padding: 0 10px 10px; }
+  .dashboard.alt .actions label {
+    font-weight: normal; }
+  .dashboard.alt .actions .search {
+    float: left; }
+    .dashboard.alt .actions .search input {
+      width: 247px;
+      display: inline-block; }
+  .dashboard.alt .actions .filter-by-type {
+    float: right;
+    padding-top: 8px; }
+    .dashboard.alt .actions .filter-by-type label {
+      margin-left: 10px; }
+      .dashboard.alt .actions .filter-by-type label input {
+        position: relative;
+        top: 1px; }
+
+.contact-person .avatar {
+  font-size: 36px; }
+
+#person-history-button {
+  margin-left: 20px; }

@@ -48,7 +48,7 @@
     <div class="content">
         <section class="phone-info">
             <div class="actions">
-                <a href="#" class="jolt-button btn" data-toggle="tooltip" data-placement="top" title="turn on elumination, vibration and sound notification on receiver's phone">Jolt</a>
+                <a href="#" class="jolt-button btn" data-toggle="tooltip" data-placement="top" title="turn on elumination, vibration and sound notification on receiver's phone">Panic Button</a>
                 <!-- <a href="#" class="call-button btn">Call</a> -->
             </div>
 
@@ -65,8 +65,8 @@
                 <span class="time-left">(5 hours left)</span>
             </div>
             <div class="uptime">
-                <span class="label">Running time</span>
-                <span class="value">85h 39m</span>
+                <span class="label">Running</span>
+                <span class="value">85 hours 39 minutes</span>
             </div>
         </section>
 
@@ -82,6 +82,22 @@
                 The phone is offline for 12 hours. This looks not good. <br>
                 Please, call the home phone <strong>+380 44 654 76 34</strong> or call the <strong>911</strong>
             </p>
+
+            <div class="actions">
+                <div class="search">
+                    <label for="search">Search:</label>
+                    <input type="text" class="form-control" autocomplete="off" name="q" id="search" placeholder="contact name / phone number"/>
+                </div>
+
+                <div class="filter-by-type">
+                    <label>
+                        <input type="checkbox" name="type" value="calls" autocomplete="off" checked/> Calls
+                    </label>
+                    <label>
+                        <input type="checkbox" name="type" value="sms" autocomplete="off" checked/> SMS
+                    </label>
+                </div>
+            </div>
 
             <table class="events-table">
                 <tr>
@@ -311,6 +327,8 @@
                             <span class="date">- 2014-08-01 @ 12:10</span>
                         </li>
                     </ul>
+
+                    <input id="person-history-button" class="btn btn-success" type="button" onclick="search('+380 97 879 45 67')" data-dismiss="modal" value="See all Calls / SMS"/>
                 </div>
             </div>
         </div>
@@ -327,6 +345,7 @@
 <script src="../static/phone-info/phone-info.js"></script>
 <script src="../static/phone-actions/phone-actions.js"></script>
 <script src="../static/dashboard/dashboard.js"></script>
+<script src="../static/alternative/alternative.js"></script>
 
 </body>
 </html>

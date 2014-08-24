@@ -1,4 +1,7 @@
 ;(function() {
+    var upt = $('.phone-info .uptime .value');
+    upt.data('text', upt.text());
+
     $('.wizard-of-oz .view-all').click(function(e) {
         e.preventDefault();
         window.localStorage.setItem('MobileCare:callsViewed', true);
@@ -19,7 +22,7 @@
         e.preventDefault();
         $('.phone-info .battery .value').text('1%')
         $('.phone-info .battery .time-left').text('(5 minutes left)');
-        $('.phone-info .uptime .value').text('85h 39m');
+        upt.text(upt.data('text'));
         $('.low-battery-message').removeClass('hidden');
         $('.offline-message').addClass('hidden');
         resetLink.removeClass('hidden');
@@ -40,7 +43,7 @@
         e.preventDefault();
         $('.phone-info .battery .value').text('39%')
         $('.phone-info .battery .time-left').text('(5 hours left)');
-        $('.phone-info .uptime .value').text('85h 39m');
+        upt.text(upt.data('text'));
         $('.low-battery-message').addClass('hidden');
         $('.offline-message').addClass('hidden');
         $(this).addClass('hidden');
