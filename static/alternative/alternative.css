@@ -1,0 +1,42 @@
+.dashboard.alt:after {
+  content: "";
+  display: table;
+  width: 100%;
+  height: 0;
+  font-size: 1px;
+  clear: both;
+  visibility: hidden; }
+.dashboard.alt .events-table {
+  width: 100%;
+  border-spacing: 10px;
+  border-collapse: separate; }
+  .dashboard.alt .events-table td {
+    width: 33%;
+    padding: 10px;
+    vertical-align: top;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s; }
+    .dashboard.alt .events-table td:hover {
+      background-color: rgba(255, 255, 255, 0.2); }
+.dashboard.alt .event {
+  margin: 0; }
+  .dashboard.alt .event .icon {
+    margin-right: 10px; }
+    .dashboard.alt .event .icon .arrow {
+      color: inherit;
+      left: -12px;
+      top: 38px;
+      font-size: 12px; }
+  .dashboard.alt .event.call.dialed .icon .arrow, .dashboard.alt .event.sms.sent .icon .arrow {
+    left: 12px; }
+  .dashboard.alt .event .wrap {
+    width: auto;
+    overflow: hidden;
+    float: none; }
+  .dashboard.alt .event .sms-text {
+    display: block;
+    margin-top: 10px; }
+  .dashboard.alt .event:hover {
+    background-color: transparent; }
+    .dashboard.alt .event:hover .sms-text {
+      background-color: rgba(255, 255, 255, 0.3); }
